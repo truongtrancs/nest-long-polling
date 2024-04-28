@@ -1,0 +1,9 @@
+
+POST http://localhost:3000/polling/123/notify
+Content-Type: application/json
+
+{
+    "timestamp": {{$timestamp}}
+}
+
+###
