@@ -15,7 +15,7 @@ export class PollingService {
     const timeout = setTimeout(() => {
       response.status(204).send(); // Send no content if timeout occurs
       this.removeRequest(id); // Cleanup the request
-    }, this.configService.get<number>('timeout')); // Timeout after 30 seconds
+    }, this.configService.get<number>('timeout')); // Timeout after n seconds
 
     this.requests.set(id, { response, timeout });
   }

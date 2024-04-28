@@ -5,7 +5,7 @@ const POLLING_URL = 'http://localhost:3000/polling/123'; // Adjust URL as needed
 async function pollServer() {
   try {
     const response = await axios.get(POLLING_URL, {
-      timeout: 10000, // Timeout after 30 seconds
+      timeout: 10000, // Timeout after 10 seconds
     });
     console.log('Received data:', response.data);
   } catch (error) {
